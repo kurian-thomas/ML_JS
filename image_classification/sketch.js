@@ -14,14 +14,14 @@ function setup() {
   mobileNetClassifier = ml5.imageClassifier("MobileNet", modelLoaded);
 
   /** loading image */
-  puffin = createImg("images/penguin.jpeg", imageReady);
-  puffin.hide();
+  /*puffin = createImg("images/penguin.jpeg", imageReady);
+  puffin.hide();*/
 
 }
 
 function handleFile(file){
   print(file);
-  
+
   if (file.type === 'image') {
     userImage = createImg(file.data, imageReady);
     userImage.hide();
