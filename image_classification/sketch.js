@@ -21,15 +21,13 @@ function setup() {
 
 function handleFile(file){
   print(file);
-
+  
   if (file.type === 'image') {
     userImage = createImg(file.data, imageReady);
     userImage.hide();
   } else {
     userImage = null;
   }
-
-
   /** prediction */
   mobileNetClassifier.predict(userImage, predictResult);
 }
@@ -48,9 +46,10 @@ function predictResult(error, results){
       max = result.confidence
     }
   });
-  console.log(results);
-  console.log(mostProbablePrediction.label);
-  console.log(parseFloat(mostProbablePrediction.confidence) * 100);
+
+  console.log("Prediction:");
+  console.log("label: %c"+mostProbablePrediction.label,"color:yellow");
+  console.log("confidence: "+"%c"+parseFloat(mostProbablePrediction.confidence) * 100 + "%","color:green");
 }
 
 
