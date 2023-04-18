@@ -1,6 +1,6 @@
 # ML JS
 Following a beginners guide to familiarise ML and its concepts hands on
 
-## Contains.
+## Contains
 
 - Image Classification using pre-trained models
