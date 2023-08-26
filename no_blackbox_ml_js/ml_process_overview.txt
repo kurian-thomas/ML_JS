@@ -1,0 +1,3 @@
+1. Data collection ( collect data in some format json, csv - raw data)
+2. Data processing ( create meta data files and split the data to formats , json , img , human readable, metadata of each)
+3. Feature extraction
